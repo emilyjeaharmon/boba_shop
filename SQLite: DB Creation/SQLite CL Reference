@@ -1,0 +1,35 @@
+# SQLite DB creation reference (command line)
+
+>sqlite3
+
+# Create Customers Table
+sqlite> CREATE TABLE Customers(CustomerID INTEGER PRIMARY KEY, CustomerName TEXT, CustomerCreatedDate TEXT, CustomerAge INTEGER, CustomerGender STRING);
+
+# Create MenuItems Table
+sqlite> CREATE TABLE MenuItems(MenuItemID INTEGER PRIMARY KEY, MenuItemName TEXT NOT NULL, MenuItemPrice REAL, MnuItemDateCreated TEXT, MenuItemStatus TEXT
+, MenuItemType TEXT, MenuItemDescription);
+
+# Create Orders Table w/ Foreign Keys to MenuItems and Customers Tables
+sqlite> CREATE TABLE Orders(OrderID INTEGER PRIMARY KEY, CustomerID INTEGER NOT NULL, MenuItemID INTEGER NOT NULL, OrderDate TEXT NOT NULL
+, FOREIGN KEY(CustomerID) REFERENCES Customers(CustomerID), FOREIGN KEY(MenuItemID) REFERENCES MenuItems(MenuItemID));
+
+# Review Tables and Schemas
+sqlite> .tables
+sqlite> .schemas
+
+# Upload Data from CSVs
+sqlite> .mode csv
+sqlite> .import csv_customers.csv Customers
+sqlite> .import csv_menuitems.csv MenuItems
+sqlite> .import csv_orders.csv Orders
+
+# Delete data before re-upload
+sqlite> DELETE from Customers
+sqlite> DELETE from MenuItems
+sqlite> DELETE from Orders
+
+# Add columns to Customer Table (example):
+sqlite> ALTER TABLE Customers ADD COLUMN CustomerState TEXT
+
+# Add data to Customer Table (example):
+sqlite> UPDATE Customers SET CustomerState='VA' WHERE CustomerID=1
