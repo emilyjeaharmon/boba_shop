@@ -2,7 +2,7 @@
 Boba Shop database creation, SQL query development, data analysis, data visualization, NLP, recommendation engine development. 
 
 ### Case Study Overview
-Boba Shop follows the boba, icecream, and merchandise purchasing habits of 1000 customers over the period of 1 year (2021) from a local boba shop. 
+Boba Shop follows the boba, icecream, and merchandise purchasing habits of 1000 customers over the period of 1 year (2021). 
 
 ### Boba Shop: Data Overview
 All customer and order information is randomly generated, using sources identified below. Database was developed using sqlite via command line (https://www.sqlitetutorial.net/)
