@@ -8,7 +8,7 @@ Developed db using sqlite via command line (https://www.sqlitetutorial.net/)
 
 CSVs are available for Reference:
 
-- Customers Table: Names from https://www.babycenter.com/baby-names/most-popular/top-baby-names. Additional info randomly generated.
+- Customers Table: Names from https://www.babycenter.com/baby-names/most-popular/top-baby-names-1988?startIndex=400. Additional info randomly generated.
 - MenuItems Table: Menu Items from https://www.milklabmobileorder.com/
 - Orders Table: Orders randomly generated 
 
