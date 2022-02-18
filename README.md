@@ -28,5 +28,5 @@ Core SQLite files needed for execution:
 - sqlite3_analyzer.exe
 
 
-# Python DB Connection & SQL Queries
+### Python DB Connection & SQL Queries
 - Boba Shop SQL Notebook.ipynb
